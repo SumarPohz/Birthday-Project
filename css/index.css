@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background : linear-gradient(grey, #c4f1f3, grey);
+  background : linear-gradient(grey, #183a3b, grey);
 }
 
 header {
@@ -72,7 +72,7 @@ nav a:hover::before {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 310px; /* Set your desired max-width for the slider */
+  max-width: 350px; /* Set your desired max-width for the slider */
   margin: 0 auto;
   padding: 10px 0;
   border-radius: 10%;

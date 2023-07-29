@@ -90,3 +90,23 @@ nav a:hover::before {
 }
 
 /* You can add additional styling to the slider-container or images if needed */
+/* Footer styles */
+footer {
+  text-align: center;
+  font-size: 9px;
+  margin-top: 100%;
+  margin-bottom: auto;
+  padding: 4px 10px;
+  background : linear-gradient(grey, #c4f1f3, grey);
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #333;
+}

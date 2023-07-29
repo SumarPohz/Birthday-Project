@@ -125,7 +125,7 @@ nav a:hover::before {
 }
 .center-legend {
   text-align: center;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .center-legend legend {
@@ -136,7 +136,7 @@ nav a:hover::before {
   border-radius: 15px;
 }
 .gift-section {
-  margin: 0;
+  margin-top: 5px;
 }
 .gift-img {
   height: 100px;
@@ -148,6 +148,24 @@ nav a:hover::before {
 }
 .gift-img:hover {
   background-image: url("/img/gif/trophy.gif");
+}
+.gift-gmi {
+  height: 100px;
+  width: 100px;
+  border: 3px solid #333;
+  border-radius: 10px;
+  background-image: url("/img/jasonGift.jpg");
+  background-size: cover;
+}
+.gift-gmi:hover {
+  background-image: url("/img/cash.avif");
+}
+.and-font {
+  font-size: 50px;
+  margin: 10px auto;
+}
+#prize-line {
+  display: flex;
 }
 /* Footer styles */
 footer {

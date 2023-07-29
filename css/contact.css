@@ -83,32 +83,51 @@ body {
 .header h1 {
   margin: 0;
 }
+/* Styles for the contact details container */
 .contact-details {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
+  justify-content: center;
+  align-items: center; /* Align the content vertically center */
+  max-width: 320px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px auto;
 }
+
+/* Styles for each contact item */
 .contact-item {
-  display: flex;
-  align-items: center;
   margin: 10px;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.contact-item a {
+  display: block;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-item a:hover {
+  color: #fff;
+}
+img {
+  border-radius: 30%;
 }
 .contact-item img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;}
+  width: 50px; /* Adjust the image size as needed */
+  height: 50px;
+  margin-bottom: 5px;
+}
+
 .contact-item p {
   margin: 0;
 }
-.contact-item a {
-  text-decoration: none;
-  color: #fff;
-}
-h3 {
-  padding: 0;
-  margin: 0 auto;
+
+/* Additional hover effect on the contact item */
+.contact-item:hover {
+  box-shadow: 0 0 10px #fff;
 }
 /* Styles for the form container */
 .form-container {
@@ -127,9 +146,17 @@ h3 {
   margin-bottom: 100px;
 }
 
-/* Hover effect on the form container */
-.contact-form:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Add border effect when the form field is focused */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid #007bff;
+  outline: none;
+}
+
+/* Add border effect when hovering over the form field */
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border: 1px solid #007bff;
 }
 
 /* Styles for input fields and textarea */
@@ -157,4 +184,24 @@ h3 {
 /* Hover effect on the submit button */
 .contact-form button:hover {
   background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  font-size: 9px;
+  margin-top: 20px;
+  padding: 4px 10px;
+  background : linear-gradient(grey, #c4f1f3, grey);
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #333;
 }

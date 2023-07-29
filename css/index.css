@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background : linear-gradient(grey, #183a3b, grey);
+  background : linear-gradient(grey, rgb(184, 142, 149), grey);
 }
 
 header {
@@ -66,8 +66,6 @@ nav a:hover::before {
   color : #fff;
 }
 
-/* Header styles (same as before) */
-
 .slider-container {
   position: relative;
   overflow: hidden;
@@ -88,15 +86,76 @@ nav a:hover::before {
   width: 100%;
   height: auto;
 }
-
 /* You can add additional styling to the slider-container or images if needed */
+.tour-page {
+  text-align: center;
+  max-width: 350px;
+  margin: 10px auto;
+  color: #fff;
+  font-size: 12px;
+}
+.lottery p {
+  display: inline-block;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 10px;
+  color: #fff;
+}
+.time {
+  text-align: right;
+  width: 50%;
+}
+.date {
+  text-align: left;
+  width: 50%
+}
+.logo-page {
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 auto;
+}
+.logo-page:hover {
+  background-color: #f5f553b6;
+}
+.center-legend {
+  text-align: center;
+  border-radius: 5px;
+}
+
+.center-legend legend {
+  display: inline-block;
+  padding: 0 10px;
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 15px;
+}
+.gift-section {
+  margin: 0;
+}
+.gift-img {
+  height: 100px;
+  width: 100px;
+  border: 3px solid #333;
+  border-radius: 10px;
+  background-image: url("/img/jasonGift1.jpg");
+  background-size: cover;
+}
+.gift-img:hover {
+  background-image: url("/img/gif/trophy.gif");
+}
 /* Footer styles */
 footer {
   text-align: center;
   font-size: 9px;
   margin-top: 100%;
   margin-bottom: auto;
-  padding: 4px 10px;
+  padding: 20px auto;
   background : linear-gradient(grey, #c4f1f3, grey);
   border-top: 1px solid #ddd;
 }

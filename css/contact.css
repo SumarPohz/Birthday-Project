@@ -192,7 +192,7 @@ footer {
   font-size: 9px;
   margin-top: 100%;
   margin-bottom: auto;
-  padding: 4px 10px;
+  padding: 20px auto;
   background : linear-gradient(grey, #c4f1f3, grey);
   border-top: 1px solid #ddd;
 }

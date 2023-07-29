@@ -5,66 +5,66 @@ body {
     background : linear-gradient(grey, #183a3b, grey);
   }
   
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background : linear-gradient(grey, #c4f1f3, grey);
-    padding: 2px;
-  }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background : linear-gradient(grey, #c4f1f3, grey);
+  padding: 2px;
+}
   
-  .logo {
-    display: flex;
-    align-items: center;
-  }
+.logo {
+  display: flex;
+  align-items: center;
+}
   
-  .logo img {
-    height: 50px; /* Set your preferred height for the logo */
-  }
+.logo img {
+  height: 50px; /* Set your preferred height for the logo */
+}
   
-  .logo-text {
-    margin-left: 10px; /* Adjust the spacing between the logo and the text */
-    display: flex;
-    flex-direction: column;
-  }
+.logo-text {
+  margin-left: 10px; /* Adjust the spacing between the logo and the text */
+  display: flex;
+  flex-direction: column;
+}
   
-  .logo-text .top-text {
-    font-size: 10px; /* Set the font size for the top text */
-  }
+.logo-text .top-text {
+  font-size: 10px; /* Set the font size for the top text */
+}
   
-  .logo-text .bottom-text {
-    font-size: 10px; /* Set the font size for the bottom text */
-  }
+.logo-text .bottom-text {
+  font-size: 10px; /* Set the font size for the bottom text */
+}
   
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
   
-  nav li {
-    margin: 0 auto;
-  }
+nav li {
+  margin: 0 auto;
+}
   
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    padding: 5px;
-    position: relative;
-  }
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 5px;
+  position: relative;
+}
   
-  nav a:hover::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 3px; /* Set the height of the hover block effect */
-    background-color: #007bff; /* Set the color of the hover block effect */
-    color : #fff;
-  }
+nav a:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px; /* Set the height of the hover block effect */
+  background-color: #007bff; /* Set the color of the hover block effect */
+  color : #fff;
+}
 
   /* header_styles.css (or create a new CSS file) */
 /* Style the heading */
@@ -96,10 +96,65 @@ body {
   margin: 10px;
 }
 .contact-item img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   margin-right: 10px;}
 .contact-item p {
   margin: 0;
 }
-</style>
+.contact-item a {
+  text-decoration: none;
+  color: #fff;
+}
+h3 {
+  padding: 0;
+  margin: 0 auto;
+}
+/* Styles for the form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  font-size: 12px;
+  max-width: 300px;
+  border-radius: 5% 5% 5% 5%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 100px;
+}
+
+/* Hover effect on the form container */
+.contact-form:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for input fields and textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Style for the submit button */
+.contact-form button {
+  background-color: grey;
+  color: #fff;
+  padding: 2px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect on the submit button */
+.contact-form button:hover {
+  background-color: #0056b3;
+}

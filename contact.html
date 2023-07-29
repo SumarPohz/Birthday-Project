@@ -28,17 +28,37 @@
     </div>
     <div class="contact-details">
       <div class="contact-item">
-        <img src="./img/balicherra email logo.png" alt="Email">
-        <p> : rilhalam123@gmail.com</p>
+        <a href="mailto:your.rilhalam123@gmail.com"><img src="./img/balicherra email logo.png" alt="Email">: Email
+        <p></p></a>
       </div>
       <div class="contact-item">
-        <img src="./img/call balichera.png" alt="Phone">
-        <p> : 936-637-3189</p>
+        <a href="tel:+919366373189"><img src="./img/call balichera.png" alt="Phone">: Call
+        <p></p></a>
 </div>
       <div class="contact-item">
-        <img src="./img/whatsapp logo balicherra.png" alt="WhatsApp">
-        <p>: 936-696-7885</p>
+        <a href="https://wa.me/919366967885"><img src="./img/whatsapp logo balicherra.png" alt="WhatsApp">: WhatsApp
+        <p></p></a>
       </div>
     </div>
+  <hr>
+  <h3 style="text-align: center;">OR</h3>
+  <hr style="width: 100px;">
+  <div class="form-container">
+    <form method="POST" action="https://api.netlify.com/forms/your-form-id" class="contact-form">
+      <div>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <div>
+        <label for="number">Number:</label>
+        <input type="tel" id="number" name="number" required>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </div>  
   </body>
 </html>

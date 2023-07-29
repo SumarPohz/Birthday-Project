@@ -139,8 +139,8 @@ nav a:hover::before {
   margin-top: 5px;
 }
 .gift-img {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border: 3px solid #333;
   border-radius: 10px;
   background-image: url("/img/jasonGift1.jpg");
@@ -150,15 +150,15 @@ nav a:hover::before {
   background-image: url("/img/gif/trophy.gif");
 }
 .gift-gmi {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border: 3px solid #333;
   border-radius: 10px;
   background-image: url("/img/jasonGift.jpg");
   background-size: cover;
 }
 .gift-gmi:hover {
-  background-image: url("/img/cash.avif");
+  background-image: url("/img/gif/cash.gif");
 }
 .and-font {
   font-size: 50px;
@@ -167,6 +167,10 @@ nav a:hover::before {
 #prize-line {
   display: flex;
 }
+.remember {
+  text-align: left;
+}
+
 /* Footer styles */
 footer {
   text-align: center;

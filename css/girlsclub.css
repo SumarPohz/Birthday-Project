@@ -171,9 +171,7 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 .submit-btn {
-    display: flex;
     margin: 10px auto;
-    text-align: center;
 }
 .popup {
     display: none;

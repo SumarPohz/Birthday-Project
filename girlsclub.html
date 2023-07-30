@@ -87,9 +87,18 @@
           <input type="text" id="name12" name="substitute3" placeholder="Substitute 3" required>
         </li>
       </ol>
+      <button type="button" id="payment-btn" onclick="showPaymentPopup()" required>Make Payment</button>
 
-      <input type="submit" value="Register">
+      <!-- Hidden payment popup -->
+      <div id="payment-popup" class="popup">
+        <h3>Payment Options</h3>
+        <img src="./img/qrcode.jpg" alt="UPI QR Code">
+        <input type="file" id="payment-screenshot" name="payment_screenshot" accept="image/*">
+        <button type="button" onclick="closePaymentPopup()">Close</button>
+      </div>
+      <input class="submit-btn" type="submit" value="Register">
     </form>
   </div>
+  <script src="index.js"></script>
   </body>
 </html>

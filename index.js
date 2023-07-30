@@ -1,13 +1,18 @@
-function toggleAudio() {
-  var audio = document.getElementById("birthdayAudio");
-  var playButton = document.getElementById("playButton");
-
-  if (audio.paused) {
-    audio.play();
-    playButton.textContent = "Stop Birthday Music";
-  } else {
-    audio.pause();
-    audio.currentTime = 0; // Rewind the audio to the beginning
-    playButton.textContent = "Play Birthday Music";
-  }
+// Show the payment popup
+function showPaymentPopup() {
+  document.getElementById("payment-popup").style.display = "block";
 }
+
+// Close the payment popup
+function closePaymentPopup() {
+  document.getElementById("payment-popup").style.display = "none";
+}
+
+// Disable form submission until the payment button is clicked
+document.getElementById("registration-form").addEventListener("submit", function(event) {
+  // Check if the payment button is required and clicked
+  if (!document.getElementById("payment-btn").clicked) {
+    event.preventDefault();
+    alert("Please make the payment before submitting the form.");
+  }
+});

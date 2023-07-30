@@ -62,7 +62,7 @@ nav a:hover::before {
   bottom: 0;
   width: 100%;
   height: 3px; /* Set the height of the hover block effect */
-  background-color: #007bff; /* Set the color of the hover block effect */
+  background-color: #fff; /* Set the color of the hover block effect */
   color : #fff;
 }
 
@@ -168,9 +168,14 @@ nav a:hover::before {
   display: flex;
 }
 .remember {
+  font-size: 10px;
+  display: block;
   text-align: left;
+  color: #333;
 }
-
+li {
+  font-weight: bold;
+}
 /* Footer styles */
 footer {
   text-align: center;

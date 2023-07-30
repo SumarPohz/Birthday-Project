@@ -116,3 +116,23 @@ a {
     background-color: grey;
     color: black;
 }
+/* Footer styles */
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 100%;
+  margin-bottom: auto;
+  padding: 10px;
+  background : transparent;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #a5e037;
+}

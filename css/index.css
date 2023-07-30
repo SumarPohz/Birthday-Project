@@ -177,6 +177,29 @@ li {
   font-weight: bold;
   font-size: 12px;
 }
+.fixed-button {
+  position:inherit;
+  bottom: 20px;
+  right: -10px;
+  padding: 5px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+a {
+  text-decoration: none;
+}
+/* Hover effect on the button */
+.fixed-button:hover {
+  background-color: black;
+  box-shadow: 0 4px 8px #fff;
+}
+
 /* Footer styles */
 footer {
   text-align: center;

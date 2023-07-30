@@ -87,9 +87,20 @@
           <input type="text" id="name12" name="substitute3" placeholder="Substitute 3" required>
         </li>
       </ol>
-
+      <button class="payment-btn" type="button" id="payment-btn" onclick="showPaymentPopup()" required>Make Payment</button>
+      <!-- Hidden payment popup -->
+      <div id="payment-popup" class="popup">
+        <h3>Rs. 1100/-</h3>
+        <img src="./img/qrcode.jpg" alt="UPI QR Code">
+        <input type="file" id="payment-screenshot" name="payment_screenshot" accept="image/*" required>
+        <button type="button" onclick="closePaymentPopup()">Close</button>
+      </div>
       <input type="submit" value="Register">
     </form>
   </div>
-  </body>
+  <script src="index.js"></script>
+  <footer>
+    Design & coded by - <a href="#">SUMARBHA POHSNEM</a>
+  </footer>
+</body>
 </html>

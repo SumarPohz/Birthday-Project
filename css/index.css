@@ -203,20 +203,20 @@ a {
 /* Footer styles */
 footer {
   text-align: center;
-  font-size: 9px;
+  font-size: 12px;
   margin-top: 100%;
   margin-bottom: auto;
-  padding: 20px auto;
-  background : linear-gradient(grey, #c4f1f3, grey);
+  padding: 10px;
+  background : transparent;
   border-top: 1px solid #ddd;
 }
 
 footer a {
-  color: #007bff;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 footer a:hover {
-  color: #333;
+  color: #a5e037;
 }

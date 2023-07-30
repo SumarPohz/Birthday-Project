@@ -20,15 +20,3 @@ document.getElementById("payment-btn").addEventListener("click", function() {
 document.getElementById("payment-screenshot").addEventListener("change", function() {
   paymentScreenshotUploaded = this.files.length > 0;
 });
-
-// Handle form submission
-document.getElementById("registration-form").addEventListener("submit", function(event) {
-  // Check if the payment button is clicked and screenshot is uploaded
-  if (!paymentButtonClicked || !paymentScreenshotUploaded) {
-    event.preventDefault();
-    alert("Please make the payment and upload the screenshot before submitting the form.");
-  } else {
-    // Form validation passed, proceed with form submission
-    // You can also add further processing here if needed
-  }
-});

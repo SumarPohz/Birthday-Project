@@ -65,14 +65,59 @@ header {
     background-color: #fff; /* Set the color of the hover block effect */
     color : #fff;
   }
+  .center-legend {
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .center-legend legend {
+    display: inline-block;
+    padding: 0 10px;
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 15px;
+  }
+  .gift-section {
+    margin-top: 5px;
+  }
+  .gift-img {
+    height: 120px;
+    width: 120px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-image: url("/img/jasonGift1.jpg");
+    background-size: cover;
+  }
+  .gift-img:hover {
+    background-image: url("/img/gif/trophy.gif");
+  }
+  .gift-gmi {
+    height: 120px;
+    width: 120px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-image: url("/img/jasonGift.jpg");
+    background-size: cover;
+  }
+  .gift-gmi:hover {
+    background-image: url("/img/gif/cash.gif");
+  }
+  .and-font {
+    font-size: 50px;
+    margin: 10px auto;
+  }
+  #prize-line {
+    display: flex;
+  }
+
 #club-registration {
     text-align: center;
     border-radius: 15px;
-    border: 3px solid #333;
+    border: 1px solid #333;
     max-width: 320px;
     margin: 10px auto;
     background-color: transparent;
-
+    box-shadow: 0 0 10px #fff;
 }
 
 .club-registration {

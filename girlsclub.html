@@ -87,7 +87,8 @@
           <input type="text" id="name12" name="substitute3" placeholder="Substitute 3" required>
         </li>
       </ol>
-      <button type="button" id="payment-btn" onclick="showPaymentPopup()" required>Make Payment</button>
+      <p></p>
+      <button class="payment-btn" type="button" id="payment-btn" onclick="showPaymentPopup()" required>Make Payment</button>
 
       <!-- Hidden payment popup -->
       <div id="payment-popup" class="popup">
@@ -96,7 +97,7 @@
         <input type="file" id="payment-screenshot" name="payment_screenshot" accept="image/*">
         <button type="button" onclick="closePaymentPopup()">Close</button>
       </div>
-      <input class="submit-btn" type="submit" value="Register">
+      <input type="submit" value="Register">
     </form>
   </div>
   <script src="index.js"></script>

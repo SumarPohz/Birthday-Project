@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background : linear-gradient(grey, rgb(184, 142, 149), grey);
+    background-color: #f5f5f5;
+}
+
+  
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background : linear-gradient(grey, #c4f1f3, grey);
+    padding: 2px;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+}
+  
+.logo img {
+    height: 50px; /* Set your preferred height for the logo */
+}
+  
+.logo-text {
+    margin-left: 10px; /* Adjust the spacing between the logo and the text */
+    display: flex;
+    flex-direction: column;
+}
+  
+.logo-text .top-text {
+    font-size: 10px; /* Set the font size for the top text */
+}
+  
+.logo-text .bottom-text {
+    font-size: 10px; /* Set the font size for the bottom text */
+}
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+nav li {
+    margin: 0 auto;
+}
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px;
+    position: relative;
+  }
+  
+  nav a:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px; /* Set the height of the hover block effect */
+    background-color: #fff; /* Set the color of the hover block effect */
+    color : #fff;
+  }
+  
+  .center-legend {
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .center-legend legend {
+    display: inline-block;
+    padding: 0 10px;
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 15px;
+  }
+  .gift-section {
+    margin-top: 5px;
+  }
+  .gift-img {
+    height: 120px;
+    width: 120px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-image: url("/img/jasonGift1.jpg");
+    background-size: cover;
+  }
+  .gift-img:hover {
+    background-image: url("/img/gif/trophy.gif");
+  }
+  .gift-gmi {
+    height: 120px;
+    width: 120px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-image: url("/img/jasonGift.jpg");
+    background-size: cover;
+  }
+  .gift-gmi:hover {
+    background-image: url("/img/gif/cash.gif");
+  }
+  .and-font {
+    font-size: 50px;
+    margin: 10px auto;
+  }
+  #prize-line {
+    display: flex;
+  }    
+ 
+.registration-form {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: 0 5px 10px rgba(7, 5, 5, 0.1);
+    border-radius: 15px;
+}
+  
+h2 {
+    text-align: Center;
+    margin-bottom: 12px;
+    color: #fff;
+}
+  
+label {
+    text-align: left;
+    display: block;
+    margin-bottom: 3px;
+    color: #333;
+}
+  
+input[type="text"],
+input[type="tel"] {
+    display: inline-block;
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: -2px;
+}
+  
+li {
+    margin-bottom: 2px;
+}
+  
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+  
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.payment-btn {
+  margin-bottom: 10px;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.popup h3 {
+  margin-top: 0;
+}
+
+.popup img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+/* Footer styles */
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 100%;
+  margin-bottom: auto;
+  padding: 7px;
+  background : transparent;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #deee85;
+}

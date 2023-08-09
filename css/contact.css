@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background : linear-gradient(grey, rgb(184, 142, 149), grey);
+  }
+  
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background : linear-gradient(grey, #c4f1f3, grey);
+  padding: 2px;
+}
+  
+.logo {
+  display: flex;
+  align-items: center;
+}
+  
+.logo img {
+  height: 50px; /* Set your preferred height for the logo */
+}
+  
+.logo-text {
+  margin-left: 10px; /* Adjust the spacing between the logo and the text */
+  display: flex;
+  flex-direction: column;
+}
+  
+.logo-text .top-text {
+  font-size: 10px; /* Set the font size for the top text */
+}
+  
+.logo-text .bottom-text {
+  font-size: 10px; /* Set the font size for the bottom text */
+}
+  
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+  
+nav li {
+  margin: 0 auto;
+}
+  
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 5px;
+  position: relative;
+}
+  
+nav a:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px; /* Set the height of the hover block effect */
+  background-color: #fff; /* Set the color of the hover block effect */
+}
+
+  /* header_styles.css (or create a new CSS file) */
+/* Style the heading */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.header h1 {
+  margin: 0;
+}
+/* Styles for the contact details container */
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align the content vertically center */
+  max-width: 320px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px auto;
+}
+
+/* Styles for each contact item */
+.contact-item {
+  margin: 10px;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.contact-item a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-item a:hover {
+  color: #fff;
+}
+img {
+  border-radius: 30%;
+}
+.contact-item img {
+  width: 50px; /* Adjust the image size as needed */
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+/* Additional hover effect on the contact item */
+.contact-item:hover {
+  box-shadow: 0 0 10px #fff;
+}
+/* Styles for the form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  font-size: 12px;
+  max-width: 350px;
+  border-radius: 6%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 100px;
+}
+
+/* Add border effect when the form field is focused */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid #007bff;
+  outline: none;
+}
+
+/* Add border effect when hovering over the form field */
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border: 1px solid #007bff;
+}
+
+/* Styles for input fields and textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Style for the submit button */
+.contact-form button {
+  background-color: #333;
+  color: #fff;
+  padding: 2px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect on the submit button */
+.contact-form button:hover {
+  background-color: rgba(206, 158, 158, 0.918);
+  color: #333;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 100%;
+  margin-bottom: auto;
+  padding: 10px;
+  background : transparent;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #a5e037;
+}

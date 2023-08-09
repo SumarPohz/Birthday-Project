@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    background : linear-gradient(grey, rgb(184, 142, 149), grey);
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background : linear-gradient(grey, #c4f1f3, grey);
+    padding: 2px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px; /* Set your preferred height for the logo */
+  }
+  
+  .logo-text {
+    margin-left: 10px; /* Adjust the spacing between the logo and the text */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-text .top-text {
+    font-size: 10px; /* Set the font size for the top text */
+  }
+  
+  .logo-text .bottom-text {
+    font-size: 10px; /* Set the font size for the bottom text */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 auto;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px;
+    position: relative;
+  }
+  
+  nav a:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px; /* Set the height of the hover block effect */
+    background-color: #fff; /* Set the color of the hover block effect */
+    color : #fff;
+  }
+  
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px; /* Set your desired max-width for the slider */
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 10%;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  
+.container {
+    position: relative;
+    align-items: center;
+  }
+  
+  .mini-button {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    width: 20px;
+    height: 130px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 14px;
+    box-shadow: #fff;
+  }
+  .mini-button:hover {
+    background-color: #fff;
+  }
+  .mini-button a {
+    color: #fff;
+  }
+  .mini-button a:hover {
+    color: #333;
+  }
+.content {
+    margin-left: 20px;
+    padding: 20px;
+}
+  
+  /* You can add additional styling to the slider-container or images if needed */
+  .tour-page {
+    text-align: center;
+    max-width: 350px;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 13px;
+  }
+  .lottery p {
+    display: inline-block;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 10px;
+    color: #fff;
+  }
+  .time {
+    text-align: right;
+    width: 50%;
+  }
+  .date {
+    text-align: left;
+    width: 50%
+  }
+  .logo-page {
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 auto;
+  }
+  .logo-page:hover {
+    background-color: #f5f553b6;
+  }
+  .center-legend {
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .center-legend legend {
+    display: inline-block;
+    padding: 0 10px;
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 15px;
+  }
+  .gift-section {
+    margin-top: 5px;
+  }
+  .gift-img {
+    height: 120px;
+    width: 120px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-image: url("/img/jasonGift1.jpg");
+    background-size: cover;
+  }
+  .gift-img:hover {
+    background-image: url("/img/gif/trophy.gif");
+  }
+  .gift-gmi {
+    height: 120px;
+    width: 120px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-image: url("/img/jasonGift.jpg");
+    background-size: cover;
+  }
+  .gift-gmi:hover {
+    background-image: url("/img/gif/cash.gif");
+  }
+  .and-font {
+    font-size: 50px;
+    margin: 10px auto;
+  }
+  #prize-line {
+    display: flex;
+  }
+  .remember {
+    font-size: 10px;
+    display: block;
+    text-align: left;
+    color: #333;
+  }
+  li {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .fixed-button {
+    position:inherit;
+    bottom: 20px;
+    right: -10px;
+    padding: 5px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul a {
+    color: #333;
+  }
+  ul a:hover {
+    color: #fff;
+  }
+  /* Hover effect on the button */
+  .fixed-button:hover {
+    background-color: black;
+    box-shadow: 0 4px 8px #fff;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20%;
+    margin-bottom: 0;
+    padding: 10px;
+    background : transparent;
+    border-top: 1px solid #ddd;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  footer a:hover {
+    color: #a5e037;
+  }

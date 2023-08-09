@@ -41,3 +41,4 @@ slider.addEventListener("mouseout", () => {
 
 // Show the initial slide
 showSlide(currentSlide);
+

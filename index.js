@@ -1,19 +1,13 @@
-let paymentButtonClicked = false;
-let paymentScreenshotUploaded = false;
+function toggleAudio() {
+  var audio = document.getElementById("birthdayAudio");
+  var playButton = document.getElementById("playButton");
 
-function showPaymentPopup() {
-  document.getElementById("payment-popup").style.display = "block";
+  if (audio.paused) {
+    audio.play();
+    playButton.textContent = "Stop Birthday Music";
+  } else {
+    audio.pause();
+    audio.currentTime = 0; // Rewind the audio to the beginning
+    playButton.textContent = "Play Birthday Music";
+  }
 }
-
-function closePaymentPopup() {
-  document.getElementById("payment-popup").style.display = "none";
-}
-
-document.getElementById("payment-btn").addEventListener("click", function() {
-  paymentButtonClicked = true;
-});
- 
-document.getElementById("payment-screenshot").addEventListener("change", function() {
-  paymentScreenshotUploaded = this.files.length > 0;
-});
-

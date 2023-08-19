@@ -5,7 +5,7 @@ const addInviteButton = document.getElementById('addInvite');
         const newInviteEntry = document.createElement('div');
         newInviteEntry.className = 'invite-entry';
         newInviteEntry.innerHTML = `
-            <input type="text" name="invitedName[]" placeholder="Friend's Number">
+            <input type="text" name="Invited Number[]" placeholder="Friend's Number">
             <select name="friendPlan[]">
                 <option value="Banana(Rs.577)">Banana(Rs.577)</option>
                 <option value="Pomegranates(Rs.3300)">Pomegranates(Rs.3300)</option>

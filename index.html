@@ -9,52 +9,36 @@
 <body>
     <div class="container">
         <h1>Terra Global Invitation Bonus Form<hr>टेरा ग्लोबल आमंत्रण बोनस फॉर्म</h1>
-        <form action="https://formsubmit.co/sumarpohz@gmail.com" method="POST" />
+        <form
+        action="https://formspree.io/f/xwkdokdo"
+        method="POST"
+      >      
             <label for="fullName">Full Name (पूरा नाम):</label>
             <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
             <label for="registrationNumber">Registration Number (पंजीकरण संख्या):</label>
             <input type="text" id="registrationNumber" name="registrationNumber" required>
-
-            <!-- ... (previous code) ... -->
-<label for="inviteData">Invite Data (डेटा आमंत्रित करें):</label>
-<div id="inviteContainer">
-    <div class="invite-entry">
-        <input type="text" name="invitedName[]" placeholder="Friend's Number ">
-        <select name="friendPlan[]">
-            <option value="Banana(Rs.577)">Banana(Rs.577)</option>
-            <option value="Pomegranates(Rs.3300)">Pomegranates(Rs.3300)</option>
-            <option value="Kiwi Investment">Kiwi(Rs.7800)</option>
-            <option value="Dragon Fruit(Rs.14500)">Dragon Fruit(Rs.14500)</option>
-        </select>
-    </div>
-</div>
-<button type="button" id="addInvite">Add Another Invite(एक और आमंत्रण जोड़ें)</button>
-<!-- ... (remaining code) ... -->
-<script>
-    const addInviteButton = document.getElementById('addInvite');
-    const inviteContainer = document.getElementById('inviteContainer');
-
-    addInviteButton.addEventListener('click', () => {
-        const newInviteEntry = document.createElement('div');
-        newInviteEntry.className = 'invite-entry';
-        newInviteEntry.innerHTML = `
-            <input type="text" name="invitedName[]" placeholder="Friend's Number">
-            <select name="friendPlan[]">
-                <option value="Banana(Rs.577)">Banana(Rs.577)</option>
-                <option value="Pomegranates(Rs.3300)">Pomegranates(Rs.3300)</option>
-                <option value="Kiwi Investment">Kiwi(Rs.7800)</option>
-                <option value="Dragon Fruit(Rs.14500)">Dragon Fruit(Rs.14500)</option>
-            </select>
-        `;
-        inviteContainer.appendChild(newInviteEntry);
-    });
-</script>
-
-<hr>
+            <label for="inviteData">Invite Data (डेटा आमंत्रित करें):</label>
+            <div id="inviteContainer">
+                <div class="invite-entry">
+                    <input type="text" name="invitedName[]" placeholder="Friend's Number ">
+                    <select name="friendPlan[]">
+                        <option value="Banana(Rs.577)">Banana(Rs.577)</option>
+                        <option value="Pomegranates(Rs.3300)">Pomegranates(Rs.3300)</option>
+                        <option value="Kiwi Investment">Kiwi(Rs.7800)</option>
+                        <option value="Dragon Fruit(Rs.14500)">Dragon Fruit(Rs.14500)</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" id="addInvite">Add Another Invite(एक और आमंत्रण जोड़ें)</button>
             <p><label for="additionalComments">Additional Comments (अतिरिक्त टिप्पणियां):</label>
             <textarea id="additionalComments" name="additionalComments" rows="4"></textarea>
-        </p>
-            <input type="submit" value="Submit" class="submit-btn">
+            </p>
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit" class="submit-btn">Submit</button>
+            <script src="index.js"></script>
         </form>
     </div>
 </body>

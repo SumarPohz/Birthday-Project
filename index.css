@@ -1,188 +1,77 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
-    margin-top: 20px;
-    text-align: center;
-    font-family: 'Happy Monkey', cursive;
-    background: linear-gradient(#a2d2ff, #EFB0C9);
-    color: #ffffff;
-}
-.bg-gif {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(./img/birthday.gif.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: animate 5s linear infinite;
-    z-index: -1;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 100px 20px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-  }
-  @keyframes animate {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-  }
- 
-  .play-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background: linear-gradient(rgb(158, 158, 152), red, rgb(158, 158, 152));
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .play-button:hover {
-    
-    background: linear-gradient(#EFB0C9, #a2d2ff , #EFB0C9);
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    padding: 30px; /* Increased padding for spacing */
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
     color: #333;
-  }
-  
-  #birthdayAudio {
-    display: none;
-  }
-#body {
-    font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 15px auto;
-}  
-h1, h2, h3, h4, p {
-    text-shadow: 0 0 1px black;
+    margin-bottom: 20px; /* Added margin for spacing */
 }
 
-#nini-img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    border: 6px solid #EFB0C9;
-    margin-bottom: 10px;
-}
-
-#bday-age {
-    background: #333;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px 0 10px 0;
-}
-
-#bday-date {
-    margin: 0;
-    background: #333;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-#header {
+form {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-.slider-container {
-    position: relative;
-    overflow: hidden;
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjusted margin for spacing */
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
     width: 100%;
-    max-width: 350px; /* Set your desired max-width for the slider */
-    margin: 0 auto;
-    padding: 10px 0;
-    border-radius: 10%;
-  }
-
-.birthday-cake {
-    width: 200px;
-    height: 200px;
-    margin: 10px auto;
-}
-  .slider {
-    display: flex;
-    transition: transform 0.3s ease;
-  }
-  
-  .slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-.gift-section {
-    margin-top: 50px;
+    transition: border-color 0.3s, background-color 0.3s;
 }
 
-.gift-title {
-    margin-bottom: 10px;
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #3498db; /* Highlight border on focus */
+    background-color: #f4f4f4; /* Highlight background on focus */
 }
 
-.gift-hint {
-    margin-top: 0;
+textarea {
+    resize: vertical;
 }
 
-#gift-img-cheers {
-    height: 200px;
+.submit-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
-.gift-img {
-    margin: 20px auto;
-    max-width: 350px;
-    height: 350px;
-    border: 6px solid white;
-    border-radius: 10px;
-    background-image: url("./img/jasonGift.jpg");
-    background-size: cover;
-}
-.gift-img-1{
-    margin: 20px auto;
-    max-width: 350px;
-    height: 350px;
-    border: 6px solid white;
-    border-radius: 10px;
-    background-image: url("./img/jasonGift1.jpg");
-    background-size: cover;
-}
-
-#gift-img-happy:hover {
-    background-image: url("img/foryou.gif");
-}
-
-#gift-img-hot:hover {
-    background-image: url("./img/reach.gif");
-}
-
-#gift-img-genius:hover {
-    background-image: url("./img/genius.gif");
-}
-
-#gift-img-badass:hover {
-    background-image: url("./img/badass1.gif");
-}
-
-#gift-img-cheers:hover {
-    background-image: url("./img/cheers.gif");
-}
-
-#footer {
-    font-style: italic;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 0;
-    background-color: #333;
-    color: #a2d2ff;
-    text-align: center;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-#footer a:hover {
-    color: skyblue;
+.submit-btn:hover {
+    background-color: #2980b9;
 }

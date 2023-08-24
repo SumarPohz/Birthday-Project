@@ -28,7 +28,7 @@ body{
 
 /* Button Styles */
 .button {
-  width: 350px;
+  width: 90%;
   background-color: rgba(168, 168, 163, 0.836);
   border: none;
   color: #333;

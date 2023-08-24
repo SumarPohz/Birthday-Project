@@ -1,77 +1,62 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 100px 20px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body{
+    background-image: url('img/f-shape1.png');
+    background-size: cover;
+    background-position: center;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 100px 0; /* Adjust padding as needed */
 }
 
+/* Container Styles */
 .container {
-    max-width: 600px;
-    padding: 30px; /* Increased padding for spacing */
-    background-color: #e0e0e0; /* Light gray background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px; /* Added margin for spacing */
+/* Button Styles */
+.button {
+  width: 95%;
+  background-color: rgba(168, 168, 163, 0.836);
+  border: none;
+  color: #333;
+  padding: 5px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+  border: 2px solid #333;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+/* Hover Effect */
+.button:hover {
+  background-color: #414641;
+  color: #fff;
+  transform: scale(1.05);
 }
 
-label {
-    font-weight: bold;
-    margin-bottom: 10px; /* Adjusted margin for spacing */
-    color: #555;
+/* Form Styles */
+.form {
+  width: 100%;
+  text-align: center;
+  display: none;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea,
-select {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    width: 100%;
-    transition: border-color 0.3s, background-color 0.3s;
+/* Form Input Styles (optional) */
+.form input {
+  width: 80%; /* Adjust as needed */
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #753759;
+  border-radius: 4px;
 }
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-textarea:focus,
-select:focus {
-    border-color: #3498db; /* Highlight border on focus */
-    background-color: #f4f4f4; /* Highlight background on focus */
-}
-
-textarea {
-    resize: vertical;
-}
-
-.submit-btn {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.submit-btn:hover {
-    background-color: #2980b9;
-}
+.wtsp_chat {    width: fit-content;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 8;}
+.wtsp_chat img {width: 57px;
+    height: auto;
+    margin: 10px;}

@@ -1,42 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Invitation Bonus</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Terra Global Invitation Bonus Form<hr>टेरा ग्लोबल आमंत्रण बोनस फॉर्म</h1>
-        <form
-        action=""
-        method=""
-      >      
-            <label for="fullName">Full Name (पूरा नाम):</label>
-            <input type="text" id="fullName" name="fullName" required>
-            <label for="registrationNumber">Registration Number (पंजीकरण संख्या):</label>
-            <input type="text" id="registrationNumber" name="registrationNumber" required>
-            <label for="inviteData">Invite Data (डेटा आमंत्रित करें):</label>
-            <div id="inviteContainer">
-                <div class="invite-entry">
-                    <input type="text" name="Invited Number[]" placeholder="Friend's Number ">
-                    <select name="friendPlan[]">
-                        <option value="Banana(Rs.577)">Banana(Rs.577)</option>
-                        <option value="Pomegranates(Rs.3300)">Pomegranates(Rs.3300)</option>
-                        <option value="Kiwi Investment">Kiwi(Rs.7800)</option>
-                        <option value="Dragon Fruit(Rs.14500)">Dragon Fruit(Rs.14500)</option>
-                    </select>
-                </div>
-            </div>
-            <button type="button" id="addInvite">Add Another Invite(एक और आमंत्रण जोड़ें)</button>
-            <p><label for="additionalComments">Additional Comments (अतिरिक्त टिप्पणियां):</label>
-            <textarea id="additionalComments" name="additionalComments" rows="4"></textarea>
-            </p>
-            <input type="hidden" name="_captcha" value="false">
-            <button type="submit" class="submit-btn">Submit</button>
-            <script src="index.js"></script>
-        </form>
+    
+  <div class="container">
+    <!-- Button 1 -->
+    <button class="button" onclick="showForm('form1')"><b>Claim Invitation Bonus</b> <br>(आमंत्रण बोनस का दावा करें)</button>
+
+    <!-- Form 1 -->
+    <div id="form1" class="form">
+      <form action="" method="post">
+        <h3>Please fill in your code and number, not those of your team members.</h3><br>कृपया अपना कोड और नंबर भरें, अपनी टीम के सदस्यों का नहीं।<br>
+        <label for="code"><b>Your Code</b><br> (आपका कोड):</label><br>
+        <input type="number" id="code" name="code"><br>
+
+        <label for="registration"><b>Your Registration number</b><br> (आपका रजिस्ट्रेशन नंबर):</label><br>
+        <input type="number" id="registration" name="registration"><br>
+
+        <label for="totalInvites"><b>Total invites yet to claim bonus</b><br> (बोनस का दावा करने के लिए अभी तक कुल आमंत्रण):</label><br>
+        <input type="number" id="totalInvites" name="totalInvites"><br>
+
+        <label for="product"><b>Product</b><br>(उत्पाद):</label><br>
+        <input type="number" id="product" name="product"><br>
+
+        <label for="whatsappNumber"><b>Your Whatsapp number</b><br> (आपका व्हाट्सएप नंबर):</label><br>
+        <input type="number" id="whatsappNumber" name="whatsappNumber"><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
     </div>
+    
+    <!-- Button 2 -->
+    <button class="button" onclick="showForm('form2')"><b>Amount debited but balance not updated</b> <br>(राशि डेबिट हो गई लेकिन शेष अपडेट नहीं हुआ।)</button>
+    <!-- Form 2 -->
+    <div id="form2" class="form">
+        <form action="" method="post">
+          <h1>Paid!? Amount debited but balance not updated?<br>Please Fill Your Details</h1>
+  
+          <label for="code2"><b>Your Code</b><br> (आपका कोड):</label><br>
+          <input type="number" id="code2" name="code2"><br>
+  
+          <label for="whatsappNumber2"><b>Your Whatsapp number</b><br> (आपका व्हाट्सएप नंबर):</label><br>
+          <input type="number" id="whatsappNumber2" name="whatsappNumber2"><br>
+  
+          <label for="utrNumber"><b>UTR Number (12 digit)</b>:</label><br>
+          <input type="number" id="utrNumber" name="utrNumber"><br>
+          <label for="amount"><b>Amount</b><br>(मात्रा):</label><br>
+          <input type="number" id="amount" name="amount"><br>
+  
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    
+      <!-- Button 3 -->
+    <button class="button" onclick="showForm('form3')"><b>Withdrawal Issue</b><br>(निकासी मुद्दा)</button>
+
+    <!-- Form 3 -->
+    <div id="form3" class="form">
+      <form action="" method="post">
+        <h3>Withdrawal Status Successful but amount not Credited into Bank?<br>Fill Your Details</h3>
+
+        <label for="code3"><b>Your Code</b><br> (आपका कोड):</label><br>
+        <input type="number" id="code3" name="code3"><br>
+
+        <label for="amount"><b>Amount</b><br>(मात्रा):</label><br>
+        <input type="number" id="amount" name="amount"><br>
+
+        <label for="withdrawalDate"><b>Withdrawal date</b><br>(वापसी की तारीख):</label><br>
+        <input type="date" id="withdrawalDate" name="withdrawalDate"><br>
+
+        <label for="whatsappNumber3"><b>Your Whatsapp number</b><br> (आपका व्हाट्सएप नंबर):</label><br>
+        <input type="number" id="whatsappNumber3" name="whatsappNumber3"><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+        <!-- Button 4 -->
+    <button class="button" onclick="showForm('form4')"><b>Forgot Password?</b><br>(पासवर्ड भूल गए?)</button>
+
+    <!-- Form 4 -->
+    <div id="form4" class="form">
+      <form action="" method="post">
+        <h2><b>Forgot Password?<br>Fill Your Details</h2>
+
+        <label for="yourCode"><b>Your Code</b><br> (आपका कोड):</label><br>
+        <input type="number" id="yourCode" name="yourCode"><br>
+
+        <label for="whatsappNumber4"><b>Your Whatsapp number</b><br> (आपका व्हाट्सएप नंबर):</label><br>
+        <input type="number" id="whatsappNumber4" name="whatsappNumber4"><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <!-- Button 5 -->
+<button class="button" onclick="showMessage('message5')"><b>Joining Bonus</b><br>(जॉइनिंग बोनस)</button>
+
+<!-- Message 5 (Hidden) -->
+<div id="message5" class="form" style="display: none;">
+  <h3>I apologize, but we do not offer a joining bonus.<br>मैं क्षमा चाहता हूं, लेकिन हम कोई ज्वाइनिंग बोनस नहीं देते।</h3>
+</div>
+<script>
+function showMessage(messageId) {
+    var message = document.getElementById(messageId);
+    if (message.style.display === "none" || message.style.display === "") {
+      message.style.display = "block";
+    } else {
+      message.style.display = "none";
+    }
+  }
+</script>
+    <!-- Additional buttons and forms can be added here -->
+  </div>
+
+<script src="index.js"></script>
+<div class="wtsp_chat">
+	<a href="https://api.whatsapp.com/send?phone=916003063616&text=Hi ma'am" target="_blank"><img src="img/wtsp.png" alt="Live Chat"></a>
+</div>
 </body>
 </html>

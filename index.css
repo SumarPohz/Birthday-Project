@@ -1,4 +1,17 @@
 
+/* CSS for styling the header */
+header {
+  background-color: transparent; /* Background color for the header */
+  color: #0e0d0d; /* Text color for the header */
+  padding: 10px; /* Padding around the content in the header */
+  text-align: center; /* Center-align the content */
+}
+
+/* CSS for styling the logo image */
+.logo {
+  max-width: 100px; /* Set the maximum width of the logo */
+  height: auto; /* Maintain the aspect ratio of the logo */
+}
 body{
     background-image: url('img/f-shape1.png');
     background-size: cover;
